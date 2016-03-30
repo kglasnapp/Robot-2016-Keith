@@ -74,7 +74,8 @@ public class TurnTo extends Command{
         controller.setInputRange(-180, 180);
         controller.setContinuous();
         controller.setAbsoluteTolerance(1.4);
-        //controller.setToleranceBuffer(20);  // Keith -- seems that if set to 20 it take too long for the pid to converge
+        //controller.setToleranceBuffer(20);  // Keith -- seems that if set to 20 it take too long for the pid to converge, I removed the setToleranceBuffer on Monday
+
 
       // controller.getAvgError();
         controller.setOutputRange(-MAX_OUTPUT, MAX_OUTPUT);
